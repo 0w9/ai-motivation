@@ -12,7 +12,6 @@ My life situation: `
 
 
 const generateAction = async (req, res) => {
-  // Run first prompt
   console.log(`API: ${basePromptPrefix}${req.body.userInput}`)
 
   const baseCompletion = await openai.createCompletion({
